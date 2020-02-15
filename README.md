@@ -1,4 +1,4 @@
-# cljsjs/material-ui-lab
+# cljsjs/material-ui-stack
 
 Clojure package for Material UI bundled with supporting packages e.g. (Icons, Lab)
 
