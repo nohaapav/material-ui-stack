@@ -1,0 +1,19 @@
+{
+    "name": "@cljsjs/material-ui-stack-bundle",
+    "private": true,
+    "scripts": {
+        "build:dev": "webpack --mode development",
+        "build:prod": "webpack --mode production --output-filename material-ui-stack.min.inc.js"
+    },
+    "dependencies": {
+        "@material-ui/core": "v4.9.0",
+        "@material-ui/lab": "4.0.0-alpha.42",
+        "@material-ui/icons": "4.9.1"
+    },
+    "devDependencies": {
+        "webpack": "4.41.5",
+        "webpack-command": "0.5.0",
+        "react": "*",
+        "react-dom": "*"
+    }
+}
