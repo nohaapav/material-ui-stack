@@ -512,6 +512,29 @@ var MaterialUIStyles = {
     ThemeProvider: function () { }
 };
 
+var MaterialUIPickers = {
+  DatePicker: function() {},
+  KeyboardDatePicker: function() {},
+  TimePicker: function() {},
+  KeyboardTimePicker: function() {},
+  DateTimePicker: function() {},
+  KeyboardDateTimePicker: function() {},
+  Calendar: function() {},
+  Day: function() {},
+  TimePickerView: function() {},
+  ClockView: function() {},
+  Clock: function() {},
+  Picker: function() {},
+  makePickerWithState: function() {},
+  validate: function() {},
+  useUtils: function() {},
+  usePickerState: function() {},
+  useStaticState: function() {},
+  useKeyboardPickerState: function() {},
+  MuiPickersUtilsProvider: function() {},
+  MuiPickersContext: function() {},
+}
+
 var MaterialUIIcons = {
     AccessAlarm: {},
     AccessAlarmOutlined: {},

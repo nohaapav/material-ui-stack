@@ -8,11 +8,14 @@
     "dependencies": {
         "@material-ui/core": "v4.9.0",
         "@material-ui/lab": "4.0.0-alpha.42",
-        "@material-ui/icons": "4.9.1"
+        "@material-ui/pickers": "4.0.0-alpha.1",
+        "@material-ui/icons": "4.9.1",
+        "@date-io/date-fns": "2.4.0"
     },
     "devDependencies": {
         "webpack": "4.41.5",
         "webpack-command": "0.5.0",
+        "date-fns": "v2.8.1",
         "react": "*",
         "react-dom": "*"
     }

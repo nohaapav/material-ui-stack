@@ -7,7 +7,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "4.9.0")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom {:project     'cljsjs/material-ui-stack
@@ -29,15 +29,19 @@
    (deps-cljs :foreign-libs [{:file           #"material-ui-stack.inc.js"
                               :file-min       #"material-ui-stack.min.inc.js"
                               :provides       ["@material-ui/core"
+                                               "@material-ui/core/styles"
+                                               "@material-ui/core/colors"
                                                "@material-ui/lab"
                                                "@material-ui/icons"
-                                               "@material-ui/core/styles"
-                                               "@material-ui/core/colors"]
-                              :global-exports '{"@material-ui/core"        MaterialUI
-                                                "@material-ui/lab"         MaterialUILab
-                                                "@material-ui/icons"       MaterialUIIcons
-                                                "@material-ui/core/styles" MaterialUIStyles
-                                                "@material-ui/core/colors" MaterialUIColors}
+                                               "@material-ui/pickers"
+                                               "@date-io/date-fns"]
+                              :global-exports '{"@material-ui/core"                     MaterialUI
+                                                "@material-ui/core/styles"              MaterialUIStyles
+                                                "@material-ui/core/colors"              MaterialUIColors
+                                                "@material-ui/lab"                      MaterialUILab
+                                                "@material-ui/icons"                    MaterialUIIcons
+                                                "@material-ui/pickers"                  MaterialUIPickers
+                                                "@date-io/date-fns"                     DateFnsUtils}
                               :requires       ["react" "react-dom"]}]
               :externs [#"material-ui-stack.ext.js"])
    (pom)
