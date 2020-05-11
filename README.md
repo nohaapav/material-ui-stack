@@ -9,7 +9,7 @@ https://material-ui.com
 Current cljsjs material-ui related packages have dependency on core module which leads to several instances of 
 `@material-ui/styles` if more than one is used. See [styles propagation issues](https://material-ui.com/getting-started/faq/#i-have-several-instances-of-styles-on-the-page)
 
-To prevent such behaviour you can either use clojurescript with [webpack](https://clojurescript.org/guides/webpack)
+To prevent such behaviour you can either use clojurescript with [webpack](https://figwheel.org/docs/npm.html)
 or bundle these packages together in a single webpack module in separate clojure package.
 
 ## Packages
